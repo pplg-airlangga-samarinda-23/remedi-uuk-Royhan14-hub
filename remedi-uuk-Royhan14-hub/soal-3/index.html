@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perhitungan Sisa Bagi NISN</title>
+</head>
+<body>
+  <h2>Hitung Sisa Bagi NISN</h2>
+  <p>Masukkan NISN Anda:</p>
+  <input type="number" id="nisn">
+  <button onclick="hitungSisa()">Hitung</button>
+  <p id="hasil"></p>
+
+  <script>
+    function hitungSisa() {
+      let nisn = document.getElementById("nisn").value;
+
+      let sisa = (nisn % 5) + 1;
+
+      document.getElementById("hasil").innerHTML = "Sisa bagi NISN Anda adalah: " + sisa;
+    }
+  </script>
+</body>
+</html>
